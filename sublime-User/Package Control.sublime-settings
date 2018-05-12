@@ -1,0 +1,26 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"BracketHighlighter",
+		"C++ Snippets",
+		"ClangAutoComplete",
+		"ConvertToUTF8",
+		"DocBlockr",
+		"Git",
+		"GitGutter",
+		"Package Control",
+		"RailsCasts Colour Scheme",
+		"Terminal",
+		"TodoReview"
+	],
+	"repositories":
+	[
+		"https://github.com/yangyliunudt/myfirstgit"
+	]
+}

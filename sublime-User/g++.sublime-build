@@ -1,0 +1,20 @@
+{
+    "cmd": ["g++", "-o", "${file_path}/${file_base_name}.exe", "-static-libgcc", "-static-libstdc++", "*.cpp"],
+    "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+    "working_dir": "${file_path}",
+    //"working_dir": "${project_path:$folder}",
+    "selector": "source.c, source.cpp, source.c++",
+    //"path": "c:/Program Files/mingw-w64/mingw64/bin",
+    "shell": true,
+    "variants": [
+        {
+            "name": "Build and Run",
+            "cmd": ["g++", "-o", "${file_path}/${file_base_name}.exe", "-static-libgcc", "-static-libstdc++", "*.cpp", "&", "${file_path}/${file_base_name}.exe"]
+        },
+        {
+            "name": "Build and Run in cmd",
+            "cmd": ["g++", "-o", "${file_path}/${file_base_name}.exe", "-static-libgcc", "-static-libstdc++", "*.cpp", "&", "start","cmd","/k","$file_base_name"]
+            //"cmd": ["g++","-o", "${file_path}/${file_base_name}.exe", "-static-libgcc", "-static-libstdc++", "*.cpp", "&", "${file_path}/${file_base_name}.exe"]
+        }
+    ]
+}
